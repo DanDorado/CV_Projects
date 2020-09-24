@@ -1,0 +1,238 @@
+
+#include <stdio.h>
+#include <stdbool.h>
+#include <stdlib.h>
+#include <cs50.h>
+#include <string.h>
+
+
+// Number of buckets in hash table alphabet/apostrophe/other
+const unsigned int N = 28;
+//Longest word.
+const int LENGTH = 20;
+//Number of words in Dictionary
+int wordcount = 0;
+//Number of misspelled words.
+int mispel = 0; //temp
+
+// Default dictionary
+#define DICTIONARY "dictionaries/small"   /////TEMP
+
+//A node is just a list of nodes.
+typedef struct node
+{
+    struct node *next[N];
+}
+node;
+
+
+/// a = 97     z = 122      \0 =0     \n = 10
+
+
+
+int main(int argc, char *argv[])
+{
+    // Check for correct number of args
+    if (argc != 2 && argc != 3)
+    {
+        printf("Usage: ./speller [DICTIONARY] text\n");     ///TEMP
+        return 1;
+    }
+    // Determine dictionary to use
+    char *dictionary = (argc == 3) ? argv[1] : DICTIONARY;
+
+     // Starting table initialise
+    node* start;
+    start = malloc(sizeof(node));
+    if (start == NULL)
+    {
+        printf("Not enough memory for start, abandoning");
+        return 1;
+    }
+
+    //Sets each starting gate to closed, except for the recursive 0.
+    start-> next[0] = start;
+    for(int i = 1; i < N; i++)
+    {
+        start-> next[i] = NULL;
+    }
+
+
+    /*Table of i - gates. if a gate leads to another node it means:
+
+    0: A non-alphabetical non-' value. Encountering any of these will return to the start and.
+    1: A word continued with a here.
+    2: A word continued with b here.
+    ....
+    26: A word continued with z here.
+    27: A word continued with an apostrophe here.
+    */
+
+    //"start" is the beginning of all words for the tree, always kept active.
+    node *trans = start;
+    node *n;
+    ///     Making Dictionary     ///
+
+    //A placeholder integer which is used to populate the tree and changes value depending on the character in the buffer.
+    int place = 0;
+
+    // CONVERT WORDS TO INTS //
+    int chunksize = 10000;
+
+    char buffer[chunksize];
+    for (int i = 0; i < chunksize; i++)
+    {
+        buffer[i] = 0;
+    }
+    int dictcon = 1;
+    FILE * dict = fopen(dictionary, "r");
+    do
+    {
+        dictcon = fread(buffer, sizeof(char), chunksize, dict);
+        for (int i = 0; i < dictcon; i++)
+        {
+            if (buffer[i] == 10)
+            {
+                place = 0;
+                printf(" end    %i  \n", place);
+            }
+            else if (buffer[i] == 39)
+            {
+                place = 27;
+                printf(" end    %i  \n", place);
+            }
+            else
+            {
+                printf("%c   %i    \n", buffer[i], buffer[i]);
+                place = buffer[i] - 96;
+                printf("now  %i  \n", place);
+            }
+            //Populate the tree with words.
+
+            //For the entire word/dictionary.
+
+
+            //If you come to a new junction, this means that you are writing in uncharted territory. If you come to a NULL zero, it means that you have
+            // completed a novel word and increase wordcount.
+            if (trans-> next[place] == NULL)
+            {
+                if (place == 0)
+                {
+                    //You've discovered a novel route to a non-alphabetical character. A new word.
+                    /*printf("New word declared at %i\n", c);*/
+                    wordcount++;
+                    /*printf("novel words: %i\n", wordcount);*/
+                    //loop this position back to the start.
+                    trans-> next[place] = start;
+                    trans = start;
+                }
+                else
+                {
+                    //You are currently 'writing' a novel path.
+                    /*printf("Writing new %i at %i\n", word[c], c);*/
+                    //Create a new node, NULL the characters there, and step into it.
+                    n = malloc(sizeof(node));
+                    if (n == NULL)
+                    {
+                        printf("error");
+                        return 1;
+                    }
+                    trans-> next[place] = n;
+                    for(int k = 0; k < N; k++)
+                    {
+                        n-> next[k] = NULL;
+                    }
+                    trans = n;
+                }
+            }
+            else
+            {
+                // You are somewhere you've been before, keep reading until you come across new characters, looping at discovered nonalphabetical characters.
+                /*printf("pass\n");*/
+                trans = trans-> next[place];
+            }
+        }
+        printf("chunk written.\n");
+    }
+    while (dictcon == chunksize);
+    printf("\nEnd\n");
+
+    //// String to Dictionary integers
+
+    // For a Dictionary we only need to worry about lowercase letters and apostrophes
+
+
+
+    /////////////////////////////////////////////////////////////
+
+
+
+
+    ///  SPELLCHECK ///
+
+    //Takes in the text to be checked for errors.
+
+    //Start the array at the start again.
+    trans = start;
+    //For the length of the new file.
+    
+    FILE * checktxt = fopen("dictionaries/small", "r");
+    do
+    {
+        dictcon = fread(buffer, sizeof(char), chunksize, checktxt);
+        int i = 0;
+        do
+        {
+            place = buffer[i];
+            printf("%i\n", place);
+            if (place == 39)
+            {
+                place = 27;
+                printf(" end    %i  \n", place);
+            }
+            else if ((place > 96) && (place < 123))
+            {
+                printf("%c   %i    \n", place, place);
+                place = place - 96;
+                printf("now  %i  \n", place);
+            }
+            else if ((i > 64) && (i < 91))
+            {
+                printf("%c   %i    \n", place, place);
+                place = place - 64;
+                printf("now  %i  \n", place);
+            }
+            else
+            {
+                place = 0;
+                printf(" end    %i  \n", place);
+            }
+    
+            //If you are charting new ground then this word wasn't in the dictionary.
+            if (trans-> next[place] == NULL)
+            {
+                //Add to misspells.
+                printf("%i is wrong\n", place);
+                mispel++;
+                printf("%i misspells\n", mispel);
+                //Burrow through text without adding to misspells until you find a new word.
+                //TODO burrow forwards to end of word and then back.
+                //return to start.
+                trans = start;
+                printf("\n");
+            }
+            else
+            {
+                //Nothing to worry about, move through the paths of the tree.
+                printf("%i is cool at %i\n", place, i);
+                trans = trans-> next[place];
+            }
+            i++;
+        }
+        while (i < dictcon);
+    }
+    while (dictcon == chunksize);
+    printf("\nTHE END\n");
+    return 0;
+}
+
