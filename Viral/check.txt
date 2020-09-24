@@ -1,0 +1,223 @@
+C:\Users\Dan\Desktop\Viraltrial\Hound\10\wobbleforward3.txt
+
+                          AT POSITION 1LOOKING AT&
+FOUND A TABLE AT POSITION 1
+                                                                THIS IS NOW  [1]
+                          AT POSITION 2LOOKING AT&
+FOUND A TABLE AT POSITION 2
+                                                                THIS IS NOW  [1][1]
+                          AT POSITION 3LOOKING AT^
+FOUND A NUMBER AT POSITION 3
+THE NUMBER IS OF SIZE2
+THE NUMBER IS-9
+                                                                THIS IS NOW  [1][1]1
+                          AT POSITION 7LOOKING AT^
+FOUND A NUMBER AT POSITION 7
+THE NUMBER IS OF SIZE2
+THE NUMBER IS-5
+                                                                THIS IS NOW  [1][1]2
+                          AT POSITION 11LOOKING AT^
+FOUND A NUMBER AT POSITION 11
+THE NUMBER IS OF SIZE1
+THE NUMBER IS1
+                                                                THIS IS NOW  [1][1]3
+                          AT POSITION 14LOOKING AT>
+READY TO LEAVE14
+                                                                ENDING: NOW  [1]
+                          AT POSITION 15LOOKING AT&
+FOUND A TABLE AT POSITION 15
+                                                                THIS IS NOW  [1][2]
+                          AT POSITION 16LOOKING AT^
+FOUND A NUMBER AT POSITION 16
+THE NUMBER IS OF SIZE3
+THE NUMBER IS-16
+                                                                THIS IS NOW  [1][2]1
+                          AT POSITION 21LOOKING AT^
+FOUND A NUMBER AT POSITION 21
+THE NUMBER IS OF SIZE2
+THE NUMBER IS-4
+                                                                THIS IS NOW  [1][2]2
+                          AT POSITION 25LOOKING AT^
+FOUND A NUMBER AT POSITION 25
+THE NUMBER IS OF SIZE1
+THE NUMBER IS1
+                                                                THIS IS NOW  [1][2]3
+                          AT POSITION 28LOOKING AT>
+READY TO LEAVE28
+                                                                ENDING: NOW  [1]
+                          AT POSITION 29LOOKING AT&
+FOUND A TABLE AT POSITION 29
+                                                                THIS IS NOW  [1][3]
+                          AT POSITION 30LOOKING AT^
+FOUND A NUMBER AT POSITION 30
+THE NUMBER IS OF SIZE2
+THE NUMBER IS-4
+                                                                THIS IS NOW  [1][3]1
+                          AT POSITION 34LOOKING AT^
+FOUND A NUMBER AT POSITION 34
+THE NUMBER IS OF SIZE3
+THE NUMBER IS-16
+                                                                THIS IS NOW  [1][3]2
+                          AT POSITION 39LOOKING AT^
+FOUND A NUMBER AT POSITION 39
+THE NUMBER IS OF SIZE1
+THE NUMBER IS1
+                                                                THIS IS NOW  [1][3]3
+                          AT POSITION 42LOOKING AT>
+READY TO LEAVE42
+                                                                ENDING: NOW  [1]
+                          AT POSITION 43LOOKING AT&
+FOUND A TABLE AT POSITION 43
+                                                                THIS IS NOW  [1][4]
+                          AT POSITION 44LOOKING AT^
+FOUND A NUMBER AT POSITION 44
+THE NUMBER IS OF SIZE1
+THE NUMBER IS6
+                                                                THIS IS NOW  [1][4]1
+                          AT POSITION 47LOOKING AT^
+FOUND A NUMBER AT POSITION 47
+THE NUMBER IS OF SIZE3
+THE NUMBER IS-15
+                                                                THIS IS NOW  [1][4]2
+                          AT POSITION 52LOOKING AT^
+FOUND A NUMBER AT POSITION 52
+THE NUMBER IS OF SIZE1
+THE NUMBER IS1
+                                                                THIS IS NOW  [1][4]3
+                          AT POSITION 55LOOKING AT>
+READY TO LEAVE55
+                                                                ENDING: NOW  [1]
+                          AT POSITION 56LOOKING AT&
+FOUND A TABLE AT POSITION 56
+                                                                THIS IS NOW  [1][5]
+                          AT POSITION 57LOOKING AT^
+FOUND A NUMBER AT POSITION 57
+THE NUMBER IS OF SIZE2
+THE NUMBER IS-2
+                                                                THIS IS NOW  [1][5]1
+                          AT POSITION 61LOOKING AT^
+FOUND A NUMBER AT POSITION 61
+THE NUMBER IS OF SIZE2
+THE NUMBER IS10
+                                                                THIS IS NOW  [1][5]2
+                          AT POSITION 65LOOKING AT^
+FOUND A NUMBER AT POSITION 65
+THE NUMBER IS OF SIZE1
+THE NUMBER IS1
+                                                                THIS IS NOW  [1][5]3
+                          AT POSITION 68LOOKING AT>
+READY TO LEAVE68
+                                                                ENDING: NOW  [1]
+                          AT POSITION 69LOOKING AT&
+FOUND A TABLE AT POSITION 69
+                                                                THIS IS NOW  [1][6]
+                          AT POSITION 70LOOKING AT^
+FOUND A NUMBER AT POSITION 70
+THE NUMBER IS OF SIZE1
+THE NUMBER IS6
+                                                                THIS IS NOW  [1][6]1
+                          AT POSITION 73LOOKING AT^
+FOUND A NUMBER AT POSITION 73
+THE NUMBER IS OF SIZE2
+THE NUMBER IS10
+                                                                THIS IS NOW  [1][6]2
+                          AT POSITION 77LOOKING AT^
+FOUND A NUMBER AT POSITION 77
+THE NUMBER IS OF SIZE1
+THE NUMBER IS1
+                                                                THIS IS NOW  [1][6]3
+                          AT POSITION 80LOOKING AT>
+READY TO LEAVE80
+                                                                ENDING: NOW  [1]
+                          AT POSITION 81LOOKING AT&
+FOUND A TABLE AT POSITION 81
+                                                                THIS IS NOW  [1][7]
+                          AT POSITION 82LOOKING AT^
+FOUND A NUMBER AT POSITION 82
+THE NUMBER IS OF SIZE1
+THE NUMBER IS1
+                                                                THIS IS NOW  [1][7]1
+                          AT POSITION 85LOOKING AT^
+FOUND A NUMBER AT POSITION 85
+THE NUMBER IS OF SIZE2
+THE NUMBER IS-8
+                                                                THIS IS NOW  [1][7]2
+                          AT POSITION 89LOOKING AT^
+FOUND A NUMBER AT POSITION 89
+THE NUMBER IS OF SIZE1
+THE NUMBER IS1
+                                                                THIS IS NOW  [1][7]3
+                          AT POSITION 92LOOKING AT>
+READY TO LEAVE92
+                                                                ENDING: NOW  [1]
+                          AT POSITION 93LOOKING AT&
+FOUND A TABLE AT POSITION 93
+                                                                THIS IS NOW  [1][8]
+                          AT POSITION 94LOOKING AT^
+FOUND A NUMBER AT POSITION 94
+THE NUMBER IS OF SIZE1
+THE NUMBER IS1
+                                                                THIS IS NOW  [1][8]1
+                          AT POSITION 97LOOKING AT^
+FOUND A NUMBER AT POSITION 97
+THE NUMBER IS OF SIZE1
+THE NUMBER IS1
+                                                                THIS IS NOW  [1][8]2
+                          AT POSITION 100LOOKING AT^
+FOUND A NUMBER AT POSITION 100
+THE NUMBER IS OF SIZE1
+THE NUMBER IS1
+                                                                THIS IS NOW  [1][8]3
+                          AT POSITION 103LOOKING AT>
+READY TO LEAVE103
+                                                                ENDING: NOW  [1]
+                          AT POSITION 104LOOKING AT&
+FOUND A TABLE AT POSITION 104
+                                                                THIS IS NOW  [1][9]
+                          AT POSITION 105LOOKING AT^
+FOUND A NUMBER AT POSITION 105
+THE NUMBER IS OF SIZE1
+THE NUMBER IS8
+                                                                THIS IS NOW  [1][9]1
+                          AT POSITION 108LOOKING AT^
+FOUND A NUMBER AT POSITION 108
+THE NUMBER IS OF SIZE1
+THE NUMBER IS6
+                                                                THIS IS NOW  [1][9]2
+                          AT POSITION 111LOOKING AT^
+FOUND A NUMBER AT POSITION 111
+THE NUMBER IS OF SIZE1
+THE NUMBER IS7
+                                                                THIS IS NOW  [1][9]3
+                          AT POSITION 114LOOKING AT^
+FOUND A NUMBER AT POSITION 114
+THE NUMBER IS OF SIZE1
+THE NUMBER IS6
+                                                                THIS IS NOW  [1][9]4
+                          AT POSITION 117LOOKING AT^
+FOUND A NUMBER AT POSITION 117
+THE NUMBER IS OF SIZE1
+THE NUMBER IS6
+                                                                THIS IS NOW  [1][9]5
+                          AT POSITION 120LOOKING AT^
+FOUND A NUMBER AT POSITION 120
+THE NUMBER IS OF SIZE1
+THE NUMBER IS6
+                                                                THIS IS NOW  [1][9]6
+                          AT POSITION 123LOOKING AT^
+FOUND A NUMBER AT POSITION 123
+THE NUMBER IS OF SIZE1
+THE NUMBER IS6
+                                                                THIS IS NOW  [1][9]7
+                          AT POSITION 126LOOKING AT^
+FOUND A NUMBER AT POSITION 126
+THE NUMBER IS OF SIZE1
+THE NUMBER IS7
+                                                                THIS IS NOW  [1][9]8
+                          AT POSITION 129LOOKING AT>
+READY TO LEAVE129
+                                                                ENDING: NOW  [1]
+                          AT POSITION 130LOOKING AT>
+READY TO LEAVE130
+                                                                ENDING: NOW  
+                                                                ENDING: NOW  
